@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl-Pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawzenie liczby parzystej</title>
+</head>
+<body>
+    <p id="wynik"></p>
+    <input type="text" id="pole"/>
+    <input type="submit" value="sprawdż Liczbe" onclick="sprawdzLiczbe()"/>
+    <script type="text/javascript">
+        function sprawdzLiczbe()
+        {
+            var liczba = document.getElementById("pole").value;
+            if(liczba%2==0)document.getElementById("wynik").innerHTML="liczba jest parzysta";
+            else document.getElementById("wynik").innerHTML="liczba jest nieparzysta";
+        }
+    </script>
+    
+</body>
+</html>
